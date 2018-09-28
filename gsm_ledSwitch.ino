@@ -51,7 +51,7 @@ void loop()
         if (inputString.indexOf("ON") > -1){
           digitalWrite(led, HIGH);
           delay(100);
-            mySerial.write("AT+CMGS=\"0721934493\"\r\n");
+            mySerial.write("AT+CMGS=\"0700000000\"\r\n");
             delay(1000);
             mySerial.write("Switched ON");
             delay(1000);
@@ -61,7 +61,7 @@ void loop()
         }         
          if (inputString.indexOf("OFF") > -1){
           digitalWrite(led, LOW);
-          mySerial.write("AT+CMGS=\"0721934493\"\r\n");
+          mySerial.write("AT+CMGS=\"0700000000\"\r\n");
           delay(1000);
           mySerial.write("Switched OFF");
           delay(1000);
